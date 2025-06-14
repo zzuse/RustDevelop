@@ -4,6 +4,17 @@ struct Deck {
 }
 
 fn main() {
-    let deck = Deck { cards: vec![] }; // same as Vec::new()
-    println!("Heres your deck: {:?}", deck);
+    let suits = vec!["Hearts", "Spades", "Diamonds"];
+    let values = ["Ace", "Two", "Three"]; // here is the fixed size array, not vector
+
+    let mut cards = vec![]; // Variables are immutable by default
+    for suit in suits {
+        for value in values {
+            let card = format!("{} of {}", value, suit);
+            cards.push(card);
+        }
+    }
+
+    let deck = Deck { cards };
+    println!("Heres your deck: {:#?}", deck); //# easier to read
 }

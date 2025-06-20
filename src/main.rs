@@ -19,8 +19,7 @@ impl Deck {
             }
         }
 
-        let deck = Deck { cards };
-        return deck;
+        Deck { cards }
     }
 }
 

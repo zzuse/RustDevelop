@@ -40,6 +40,6 @@ fn main() {
     deck.shuffle();
 
     let cards = deck.deal(3);
-    println!("Heres your hands: {:#?}", cards); //# easier to read
-    println!("Heres your deck: {:#?}", deck); //# easier to read
+    println!("Heres your hands: {:#?}", cards); // {:?} in single line
+    println!("Heres your deck: {:#?}", deck); // {:#?} in multiple easy read line
 }

@@ -4,6 +4,6 @@
 10. Mutable vs Immutable Bindings -- commit 51e4d493310b2bc43ea449af0a04a2c568d5d2a1
 11. Implementations and Methods -- commit ef94325610449b4690f701122b8e13eb0754dffe
 12. Implicit Returns -- commit 28b55e855299981a9b21db5088042dbd6598b98c
-13. cargo add rand
-15. Shuffling a Slice
-16. Splitting a Vector
+13. cargo add rand -- commit 888685b697a6c945e43e9dddbc0d35a14b6c2db0
+15. Shuffling a Slice -- commit 888685b697a6c945e43e9dddbc0d35a14b6c2db0
+16. Splitting a Vector -- commit 888685b697a6c945e43e9dddbc0d35a14b6c2db0

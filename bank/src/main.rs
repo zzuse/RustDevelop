@@ -26,7 +26,7 @@ impl Bank {
     }
 }
 
-fn print_account(account: Account) {
+fn print_account(account: &Account) {
     println!("{:#?}", account);
 }
 
@@ -36,6 +36,11 @@ fn main() {
         1,
         String::from("me"), // "me" is a slice
     );
+    let account_ref1 = &account;
+    let account_ref2 = &account;
+
     println!("{:#?}", bank);
-    print_account(account);
+    print_account(account_ref1);
+    print_account(account_ref2);
+    println!("{:#?}", account);
 }

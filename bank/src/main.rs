@@ -30,17 +30,22 @@ fn print_account(account: &Account) {
     println!("{:#?}", account);
 }
 
+fn add_account(bank: &mut Bank, account: Account) {
+    bank.accounts.push(account);
+}
+
 fn main() {
-    let bank = Bank::new();
+    let mut bank = Bank::new();
     let account = Account::new(
         1,
         String::from("me"), // "me" is a slice
     );
-    let account_ref1 = &account;
-    let account_ref2 = &account;
 
+    add_account(&mut bank, account);
     println!("{:#?}", bank);
+    let account_ref1 = &bank.accounts[0];
+    let account_ref2 = &bank.accounts[0];
     print_account(account_ref1);
     print_account(account_ref2);
-    println!("{:#?}", account);
+    println!("{:#?}", bank.accounts[0]);
 }

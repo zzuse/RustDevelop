@@ -12,4 +12,5 @@ bank/
 19. Define bank struct -- commit da078bfa69da7cd3f7a9c57cc32140fd5d041d43
 21. Adding new() -- commit ae26a1fc37b8fc9e276823b431488151b47fd8f4
 35. Immutable References -- commit cacde18a0fe201ba20a1c66aa41daeee5bf27f31
-37. Solution on Mutable Refs
+37. Solution on Mutable Refs -- commit ee95d44987acc14eafc957b61d7b46ac485bc5df
+39. Basic of Lifetimes

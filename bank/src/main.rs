@@ -34,6 +34,11 @@ fn add_account(bank: &mut Bank, account: Account) {
     bank.accounts.push(account);
 }
 
+fn make_and_print_account() {
+    let account = Account::new(1, String::from("you"));
+    println!("{:#?}", account);
+}
+
 fn main() {
     let mut bank = Bank::new();
     let account = Account::new(
@@ -48,4 +53,5 @@ fn main() {
     print_account(account_ref1);
     print_account(account_ref2);
     println!("{:#?}", bank.accounts[0]);
+    make_and_print_account();
 }

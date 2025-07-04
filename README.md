@@ -14,4 +14,5 @@ bank/
 35. Immutable References -- commit cacde18a0fe201ba20a1c66aa41daeee5bf27f31
 37. Solution on Mutable Refs -- commit ee95d44987acc14eafc957b61d7b46ac485bc5df
 39. Basic of Lifetimes -- commit 23e570944087ccd92b7f59a134389855b523e21e
-42. Implementing Deposit and Withdraws
+42. Implementing Deposit and Withdraw -- commit cc48cb3c930abb04812be5025d9b9d916e786fc3
+43. Accounts and Bank Implementation

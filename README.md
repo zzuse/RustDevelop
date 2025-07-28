@@ -1,4 +1,7 @@
 # Rust: The Complete Developer's Guide
+```bash
+cargo run -q
+```
 
 deck/
 8. Adding Functionality to Structs -- commit 8edb47864f81fa413e34fccf4d8230013faf5cf7 
@@ -16,3 +19,5 @@ bank/
 39. Basic of Lifetimes -- commit 23e570944087ccd92b7f59a134389855b523e21e
 42. Implementing Deposit and Withdraw -- commit cc48cb3c930abb04812be5025d9b9d916e786fc3
 43. Accounts and Bank Implementation
+media/
+46. Defining Enums

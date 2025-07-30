@@ -21,4 +21,5 @@ bank/
 43. Accounts and Bank Implementation -- commit 09de4bfb06bf034491206f4d2a0762e9f09f6901
 media/
 46. Defining Enums -- commit 2dcb07e3875288af5a306d2a27e603022355bfb0
-48. Adding Implementations to Enums
+48. Adding Implementations to Enums -- commit f9633b2a4166d4dc8191b02349144c8ba79889b0
+49. Pattern Matching with Enums

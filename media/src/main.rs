@@ -17,6 +17,20 @@ impl Media {
             String::from("Media Description")
         }
     }
+
+    fn description2(&self) -> String {
+        match self {
+            Media::Book { title, author } => {
+                format!("Book: {} {}", title, author)
+            }
+            Media::Movie { title, director } => {
+                format!("Movie: {} {}", title, director)
+            }
+            Media::Audiobook { title } => {
+                format!("Audiobook: {} ", title)
+            }
+        }
+    }
 }
 
 fn print_media(media: Media) {
@@ -39,6 +53,10 @@ fn main() {
     println!("{}", audiobook.description());
     println!("{}", good_movie.description());
     println!("{}", bad_book.description());
+
+    println!("{}", audiobook.description2());
+    println!("{}", good_movie.description2());
+    println!("{}", bad_book.description2());
 
     print_media(audiobook);
     print_media(good_movie);

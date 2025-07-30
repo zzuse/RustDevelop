@@ -23,3 +23,5 @@ media/
 46. Defining Enums -- commit 2dcb07e3875288af5a306d2a27e603022355bfb0
 48. Adding Implementations to Enums -- commit f9633b2a4166d4dc8191b02349144c8ba79889b0
 49. Pattern Matching with Enums -- commit a3c7f8a75d6186786d2e21fde5231edca170f3a7
+51. Adding Catalog Items -- commit 0fabfe5a496e10d9cffec5d31a69e46bdd7d4b07
+52. Unlabeled Fields

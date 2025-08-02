@@ -96,4 +96,15 @@ fn main() {
     catalog.add(placeholder);
 
     println!("{:#?}", catalog);
+    println!("{:#?}", catalog.items.get(0));
+    println!("{:#?}", catalog.items.get(100));
+
+    match catalog.items.get(0) {
+        Option::Some(value) => {
+            println!("Item: {:#?}", value);
+        }
+        Option::None => {
+            println!("Nothing");
+        }
+    }
 }

@@ -57,7 +57,7 @@ impl Catalog {
 
     fn get_by_index(&self, index: usize) -> MightHaveAValue {
         if self.items.len() > index {
-            MightHaveAValue::ThereIsAValue((&self.items[index]))
+            MightHaveAValue::ThereIsAValue(&self.items[index])
         } else {
             MightHaveAValue::NoValueAvailable
         }
@@ -135,4 +135,13 @@ fn main() {
     } else {
         println!("No Value!!!!")
     }
+
+    let item = catalog.items.get(0);
+    println!("unwrap {:#?}", item.unwrap());
+
+    let item = catalog.items.get(40);
+    let placeholder = Media::Placeholder;
+    println!("unwrap_or {:#?}", item.unwrap_or(&placeholder));
+    // let item = catalog.items.get(40);
+    println!("expect {:#?}", item.expect("There should be a value here"));
 }

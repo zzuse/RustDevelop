@@ -27,4 +27,5 @@ media/
 52. Unlabeled Fields -- commit 837267c6de1d8ba58b673d2b1446e4144d64e812
 53. The Option Enum -- commit 07c699be336e1c9356e3b6607430a610076000d6
 55. The Option Underniece -- commit 373290798c1fa6857807731583a0c7d8d1a7ed31
-56. Other Ways of Handling Options
+56. Other Ways of Handling Options -- commit 485b7dfb2ab4bd2152b62561a796bb6768ad733f
+57. Excercise

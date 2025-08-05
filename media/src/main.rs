@@ -73,6 +73,11 @@ fn print_media(media: &Media) {
     println!("{:#?}", media);
 }
 
+#[derive(Debug)]
+struct Account {
+    balance: i32,
+}
+
 fn main() {
     let audiobook = Media::Audiobook {
         title: String::from("An Audiobook"),
@@ -142,6 +147,9 @@ fn main() {
     let item = catalog.items.get(40);
     let placeholder = Media::Placeholder;
     println!("unwrap_or {:#?}", item.unwrap_or(&placeholder));
-    // let item = catalog.items.get(40);
+
+    let accounts: Vec<Account> = vec![Account { balance: 0 }, Account { balance: 10 }];
+    println!("{:#?}", accounts);
+    // code below will panic
     println!("expect {:#?}", item.expect("There should be a value here"));
 }

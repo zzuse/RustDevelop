@@ -148,8 +148,17 @@ fn main() {
     let placeholder = Media::Placeholder;
     println!("unwrap_or {:#?}", item.unwrap_or(&placeholder));
 
-    let accounts: Vec<Account> = vec![Account { balance: 0 }, Account { balance: 10 }];
+    let mut accounts: Vec<Account> = vec![Account { balance: 0 }, Account { balance: 10 }];
     println!("{:#?}", accounts);
+    match accounts.first_mut() {
+        Some(account) => {
+            account.balance = 30;
+            println!("{:#?}", account);
+        }
+        None => {
+            println!("No account found")
+        }
+    }
     // code below will panic
     println!("expect {:#?}", item.expect("There should be a value here"));
 }

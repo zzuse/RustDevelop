@@ -29,4 +29,6 @@ media/
 55. The Option Underniece -- commit 373290798c1fa6857807731583a0c7d8d1a7ed31
 56. Other Ways of Handling Options -- commit 485b7dfb2ab4bd2152b62561a796bb6768ad733f
 57. Excercise -- commit 0bb75d6f7532fcf14cfe5ae33349727f2b533a33
-61. Refactoring with Multiple Modules
+61. Refactoring with Multiple Modules -- commit 27dc03d859a6b821d33daabe51c0e832339ce386
+logs/
+63. Reading a File

@@ -20,6 +20,18 @@ fn main() {
             println!("{}", reason_this_failed_validation)
         }
     }
+
+    let ingredients = vec![
+        String::from("Cheese"),
+        String::from("Tomatoes"),
+        String::from("Peppers"),
+        // String::from("Olives"),
+    ];
+
+    match validate_ingredients(&ingredients) {
+        Ok(..) => println!("Ingredients are good to go"),
+        Err(error) => println!("Failed validation: {}", error),
+    }
 }
 
 // Generic Enum Result<T,E> { Ok(T), Err(E)}
@@ -36,5 +48,13 @@ fn validate_email(email: String) -> Result<(), Error> {
         Ok(())
     } else {
         Err(Error::other("emails must have an @"))
+    }
+}
+
+fn validate_ingredients(ingredients: &Vec<String>) -> Result<(), Error> {
+    if ingredients.len() > 3 {
+        Err(Error::other("too many ingredients"))
+    } else {
+        Ok(())
     }
 }

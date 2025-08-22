@@ -38,6 +38,12 @@ fn main() {
         Ok(..) => println!("Ingredients are good to go"),
         Err(error) => println!("Failed validation: {}", error),
     }
+
+    string_test(
+        "blue".to_string(),
+        &String::from("red"),
+        String::from("red").as_str(),
+    );
 }
 
 // Generic Enum Result<T,E> { Ok(T), Err(E)}
@@ -63,4 +69,11 @@ fn validate_ingredients(ingredients: &Vec<String>) -> Result<(), Error> {
     } else {
         Ok(())
     }
+}
+
+fn string_test(a: String, b: &String, c: &str) {
+    // stack fast, 2-8MB
+    // heap slow, big
+    let c = &a[1..4];
+    println!("{:#?}", c);
 }

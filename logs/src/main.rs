@@ -4,7 +4,8 @@ use std::io::Error;
 fn main() {
     match fs::read_to_string("logs.txt") {
         Ok(text_that_was_read) => {
-            println!("{:#?}", text_that_was_read);
+            let error_logs = extract_errors(&text_that_was_read.as_str());
+            println!("{:#?}", error_logs);
         }
         Err(why_this_failed) => {
             println!("Failed to read file: {}", why_this_failed)
@@ -74,6 +75,20 @@ fn validate_ingredients(ingredients: &Vec<String>) -> Result<(), Error> {
 fn string_test(a: String, b: &String, c: &str) {
     // stack fast, 2-8MB
     // heap slow, big
-    let c = &a[1..4];
-    println!("{:#?}", c);
+    let string_slice = &a[1..4];
+    println!("a1..4{:#?}", string_slice);
+    println!("b{:#?}", b);
+    println!("c{:#?}", c);
+}
+
+fn extract_errors(text: &str) -> Vec<&str> {
+    let split_text = text.split("\n");
+    let mut results = vec![];
+
+    for line in split_text {
+        if line.starts_with("ERROR") {
+            results.push(line);
+        }
+    }
+    results
 }

@@ -36,4 +36,5 @@ logs/
 68. Empty Ok Variants -- commit 878fab2efeff34ef1e47bab60f5d59aaf9b447cd
 70. Excercise of Result -- commit 8545741b1bdae11897071e04eaec85df52bd9696
 71. Using Result when reading files -- commit 1b35173af6fb93c5e888639625b9a377e87123df
-75. String, String Ref and String Slices
+75. String, String Ref and String Slices -- commit 03e363678f5f26b46c6232d3cc048a55d1037f0c
+76. Finding Error Logs

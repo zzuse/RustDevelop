@@ -6,6 +6,12 @@ fn main() {
         Ok(text_that_was_read) => {
             let error_logs = extract_errors(&text_that_was_read.as_str());
             println!("{:#?}", error_logs);
+            match fs::write("errors.txt", error_logs.join("\n")) {
+                Ok(..) => println!("Wrote errors.txt"),
+                Err(reason_write_failed) => {
+                    println!("Writing of errors.txt failed: {}", reason_write_failed);
+                }
+            }
         }
         Err(why_this_failed) => {
             println!("Failed to read file: {}", why_this_failed)

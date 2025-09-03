@@ -1,7 +1,7 @@
 use std::fs;
 use std::io::Error;
 
-fn main() {
+fn main() -> Result<(), Error> {
     match fs::read_to_string("logs.txt") {
         Ok(text_that_was_read) => {
             let error_logs = extract_errors(&text_that_was_read.as_str());
@@ -17,6 +17,15 @@ fn main() {
             println!("Failed to read file: {}", why_this_failed)
         }
     }
+
+    // alternatives 1
+    let text = fs::read_to_string("logs.txt").expect("failed to read logfile");
+    let error_logs = extract_errors(text.as_str());
+    fs::write("errors_.txt", error_logs.join(",")).expect("failed to write errors_.txt");
+    // alternatives 2
+    let text = fs::read_to_string("logs.txt")?;
+    let error_logs = extract_errors(text.as_str());
+    fs::write("errors_.txt", error_logs.join("\n"))?;
 
     match divide(5.0, 0.0) {
         Ok(result_of_division) => {
@@ -51,6 +60,8 @@ fn main() {
         &String::from("red"),
         String::from("red").as_str(),
     );
+    Ok(())
+    // Err(Error::other("something went wrong..."))
 }
 
 // Generic Enum Result<T,E> { Ok(T), Err(E)}

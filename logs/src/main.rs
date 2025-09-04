@@ -18,11 +18,12 @@ fn main() -> Result<(), Error> {
         }
     }
 
-    // alternatives 1
+    // alternatives 1, unwrap() or expect() if you want to crash on an Err()
     let text = fs::read_to_string("logs.txt").expect("failed to read logfile");
+    // let text = fs::read_to_string("logs.txt").unwrap_or(String::from("backup text"));
     let error_logs = extract_errors(text.as_str());
     fs::write("errors_.txt", error_logs.join(",")).expect("failed to write errors_.txt");
-    // alternatives 2
+    // alternatives 2, if you don't have a work around when error happens
     let text = fs::read_to_string("logs.txt")?;
     let error_logs = extract_errors(text.as_str());
     fs::write("errors_.txt", error_logs.join("\n"))?;

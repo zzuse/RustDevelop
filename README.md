@@ -39,4 +39,6 @@ logs/
 75. String, String Ref and String Slices -- commit 03e363678f5f26b46c6232d3cc048a55d1037f0c
 76. Finding Error Logs -- commit ab1315ecc5d0b685f91c9e498bcbbfa8a81fcf92
 79. Writing Data to a File -- commit d373e38153516dd9a7089fe7af3935523f2e6415
-81. Try Operator
+81. Try Operator -- commit 931408ccbf4a89490919da04bc6d1e90dc04d938
+iter/
+84. Basics of Iterators

@@ -41,4 +41,5 @@ logs/
 79. Writing Data to a File -- commit d373e38153516dd9a7089fe7af3935523f2e6415
 81. Try Operator -- commit 931408ccbf4a89490919da04bc6d1e90dc04d938
 iter/
-84. Basics of Iterators
+84. Basics of Iterators -- commit d35b6be0de6dd3e138e34cfce3a636b5c64690fd
+85. Using for and for_each loops

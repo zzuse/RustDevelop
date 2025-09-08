@@ -42,4 +42,5 @@ logs/
 81. Try Operator -- commit 931408ccbf4a89490919da04bc6d1e90dc04d938
 iter/
 84. Basics of Iterators -- commit d35b6be0de6dd3e138e34cfce3a636b5c64690fd
-85. Using for and for_each loops
+85. Using for and for_each loops -- commit 55fd55495067b74f7d0bc9d5f6a68f34fd2dc3f1
+86. Iterator map Adaptor

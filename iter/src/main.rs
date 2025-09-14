@@ -15,6 +15,13 @@ fn print_map_for_each_elements(elements: &Vec<String>) {
         .for_each(|el| println!("{} {}", el, el));
 }
 
+fn print_map_for_each_elements_slices(elements: &[String]) {
+    elements
+        .iter()
+        .map(|el| format!("{} {}", el, el))
+        .for_each(|el| println!("{} {}", el, el));
+}
+
 fn main() {
     let colors = vec![
         String::from("red"),
@@ -32,4 +39,6 @@ fn main() {
     print_for_elements(&colors);
     print_for_each_elements(&colors);
     print_map_for_each_elements(&colors);
+    // prefer slices for adapability
+    print_map_for_each_elements_slices(&colors);
 }

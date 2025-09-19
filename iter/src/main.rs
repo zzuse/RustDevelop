@@ -22,8 +22,16 @@ fn print_map_for_each_elements_slices(elements: &[String]) {
         .for_each(|el| println!("{} {}", el, el));
 }
 
+fn shorten_strings(elements: &mut Vec<String>) {
+    elements.iter_mut().for_each(|el| el.truncate(1));
+}
+
+fn shorten_strings_slice(elements: &mut [String]) {
+    elements.iter_mut().for_each(|el| el.truncate(1));
+}
+
 fn main() {
-    let colors = vec![
+    let mut colors = vec![
         String::from("red"),
         String::from("green"),
         String::from("blue"),
@@ -41,4 +49,8 @@ fn main() {
     print_map_for_each_elements(&colors);
     // prefer slices for adapability
     print_map_for_each_elements_slices(&colors);
+    shorten_strings(&mut colors);
+    println!("{:#?}", colors);
+    shorten_strings_slice(&mut colors);
+    println!("{:#?}", colors);
 }

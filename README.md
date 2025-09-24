@@ -46,4 +46,5 @@ iter/
 86. Iterator map Adaptor -- commit c43e4e71bc8b808ca73e13dec9741576ba7b0d0c  
 87. Vector Slices -- commit 16f9cba5984fbcf81dded3fbf45aa5b948714037
 90. Iterators with Mutable Refs/Slices -- commit 5906c563bdd0d64432d137eb327aaaa94730244e
-93. How collect works
+93. How collect works -- commit 145ae2adea082342197c39b32adb333e3e7a7459
+94. Moving Ownership with into_iter

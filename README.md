@@ -45,4 +45,5 @@ iter/
 85. Using for and for_each loops -- commit 55fd55495067b74f7d0bc9d5f6a68f34fd2dc3f1  
 86. Iterator map Adaptor -- commit c43e4e71bc8b808ca73e13dec9741576ba7b0d0c  
 87. Vector Slices -- commit 16f9cba5984fbcf81dded3fbf45aa5b948714037
-90. Iterators with Mutable Refs/Slices
+90. Iterators with Mutable Refs/Slices -- commit 5906c563bdd0d64432d137eb327aaaa94730244e
+93. How collect works

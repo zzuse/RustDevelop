@@ -49,6 +49,13 @@ fn explode(elements: &[String]) -> Vec<Vec<String>> {
         .collect()
 }
 
+fn find_color_or(elements: &[String], search: &str, fallback: &str) -> String {
+    elements
+        .iter()
+        .find(|el| el.contains(search))
+        .map_or(String::from(fallback), |el| el.to_string())
+}
+
 fn main() {
     let mut colors = vec![
         String::from("red"),
@@ -68,7 +75,13 @@ fn main() {
     print_map_for_each_elements(&colors);
     // prefer slices for adapability
     print_map_for_each_elements_slices(&colors);
+    // explode
     println!("explode: {:#?}", explode(&colors));
+
+    // find
+    let found_color = find_color_or(&colors, "re", "Orange");
+    println!("found {}", found_color);
+
     shorten_strings(&mut colors);
     println!("Shortern vector: {:#?}", colors);
     shorten_strings_slice(&mut colors);

@@ -48,4 +48,5 @@ iter/
 90. Iterators with Mutable Refs/Slices -- commit 5906c563bdd0d64432d137eb327aaaa94730244e
 93. How collect works -- commit 145ae2adea082342197c39b32adb333e3e7a7459
 94. Moving Ownership with into_iter -- commit efa22713f3fe84b32d33adc055a097468c083a61
-95. Inner Maps
+95. Inner Maps -- commit 1f2c15c90afdb3dc1aa555baae2cde9e2e99df31
+97. Iter Lifetime

@@ -49,4 +49,5 @@ iter/
 93. How collect works -- commit 145ae2adea082342197c39b32adb333e3e7a7459
 94. Moving Ownership with into_iter -- commit efa22713f3fe84b32d33adc055a097468c083a61
 95. Inner Maps -- commit 1f2c15c90afdb3dc1aa555baae2cde9e2e99df31
-97. Iter Lifetime
+97. Iter Lifetime -- commit 4124e9ae0d481f90d769b82b94e4df13bd7f7b1f
+101. iter().filter(|account| account.balance < 0).collect()

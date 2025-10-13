@@ -53,4 +53,6 @@ iter/
 101. iter().filter(|account| account.balance < 0).collect() -- commit 180e92277f7397ee32dc0a29b1b76f8775969d93
 lifetimes/
 105. Lifetime Annotation -- commit 370a455bef67f3cbf1ff97b3ecbf9fe8bb881e33
-108. Common Lifetimes
+108. Common Lifetimes -- commit 6836a761a5c4aa6841b35e5a57e8dc79bc1361ab
+generics/
+111. num_traits

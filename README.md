@@ -55,4 +55,4 @@ lifetimes/
 105. Lifetime Annotation -- commit 370a455bef67f3cbf1ff97b3ecbf9fe8bb881e33
 108. Common Lifetimes -- commit 6836a761a5c4aa6841b35e5a57e8dc79bc1361ab
 generics/
-111. num_traits
+111. num_traits -- commit a54acee161a6d6206fee94a3e25da7fc0b725020

@@ -56,4 +56,5 @@ lifetimes/
 108. Common Lifetimes -- commit 6836a761a5c4aa6841b35e5a57e8dc79bc1361ab
 generics/
 111. num_traits -- commit a54acee161a6d6206fee94a3e25da7fc0b725020
-113. Multiple Generic Types
+113. Multiple Generic Types -- commit f3ed6e9e535ba620719e733ea9e9478f48a89c4c
+114. Super solve
